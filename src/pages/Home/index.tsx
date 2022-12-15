@@ -1,9 +1,11 @@
 
+import { BannerHome } from '../../components/banner-home';
+import './styles.module.scss';
 
 export function Home() {
     return (
-        <>
-            <h1>teste</h1>
-        </>
+        <main>
+            <BannerHome />
+        </main>
     )
 }
