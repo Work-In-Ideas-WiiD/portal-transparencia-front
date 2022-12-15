@@ -7,10 +7,18 @@ html {
 }
 
 :root {
+    --azul-400: #5998D3;
+    --azul-400-rgb: 89, 152, 211;
+    --azul-400-contrast: #000000;
+    --azul-400-contrast-rgb: 0, 0, 0;
+    --azul-400-shade: #4e86ba;
+    --azul-400-tint: #6aa2d7;
 
     --azul-700: #116B88;
 
     --cinza-300: #EBEBEB;
+    --cinza-450: #A6A6A6;
+    --cinza-500: #A7A7A7;
 }
 
 @media (max-width: 1800px) {
