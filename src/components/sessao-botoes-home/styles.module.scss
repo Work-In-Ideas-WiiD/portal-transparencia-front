@@ -18,6 +18,7 @@
             height: 200px;
             border-radius: 15px;
             position: relative;
+            cursor: pointer;
 
             .linha {
                 position: absolute;
@@ -52,6 +53,20 @@
 
                     font-size: 1.25rem;
                     opacity: 0.8;
+                }
+
+                .flecha {
+                    transition: .2s;
+                    margin-left: 24px;
+                }
+            }
+
+            &:hover {
+                .containerTexto {
+                    .flecha {
+                        transition: .2s;
+                        margin-left: 44px;
+                    }
                 }
             }
 

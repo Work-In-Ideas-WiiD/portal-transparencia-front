@@ -2,6 +2,10 @@
 import styles from './styles.module.scss';
 import IconeCard1 from '../../assets/icone-card1.png';
 import IconeCard2 from '../../assets/icone-card2.png';
+import IconeFlechaBranca from '../../assets/flecha-branca.png';
+import IconeFlechaPreta from '../../assets/flecha-preta.png';
+
+
 
 export function SessaoBotoesHome() {
     return (
@@ -14,6 +18,7 @@ export function SessaoBotoesHome() {
                     <br />
                     <div className={styles.containerTexto}>
                         <span className={styles.texto2}>Quero ser aprendiz</span>
+                        <img className={styles.flecha} src={IconeFlechaPreta} />
                     </div>
                 </div>
                 <div className={`${styles.cartao} ${styles.azul}`}>
@@ -23,6 +28,7 @@ export function SessaoBotoesHome() {
                     <br />
                     <div className={styles.containerTexto}>
                         <span className={`${styles.texto2} ${styles.branco}`}>Quero contratar aprendiz</span>
+                        <img className={styles.flecha} src={IconeFlechaBranca} />
                     </div>
 
                 </div>
