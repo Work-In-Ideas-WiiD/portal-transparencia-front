@@ -1,7 +1,7 @@
 
 import styles from './styles.module.scss';
-import IconeCard1 from '../../../public/assets/icone-card1.png';
-import IconeCard2 from '../../../public/assets/icone-card2.png';
+import IconeCard1 from '../../assets/icone-card1.png';
+import IconeCard2 from '../../assets/icone-card2.png';
 
 export function SessaoBotoesHome() {
     return (

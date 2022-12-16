@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import ImgBanner from '../../../public/assets/banner-recortado.png'
+import ImgBanner from '../../assets/banner-recortado.png'
 
 export function BannerHome() {
     return (

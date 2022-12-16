@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import Logo from '../../../public/assets/logo-renapsi.png';
+import Logo from '../../assets/logo-renapsi.png';
 import { Link } from 'react-router-dom';
 
 export function Header() {

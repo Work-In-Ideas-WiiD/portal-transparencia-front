@@ -22,10 +22,10 @@ export function FormularioHome() {
                     </p>
                     <form action="submit" className={styles.form} onSubmit={(e) => { e.preventDefault() }}>
                         <select className={styles.select} >
-                            <option >Âmbito do projeto</option>
+                            <option value="" disabled selected>Âmbito do projeto</option>
                         </select>
                         <select className={styles.select} >
-                            <option >Ano</option>
+                            <option value="" disabled selected>Ano</option>
                         </select>
                         <input type="text" className={styles.input} placeholder="Palavra chave relacionada ao projeto" />
                         <button className={styles.botaoSubmit} type="submit">Buscar</button>
