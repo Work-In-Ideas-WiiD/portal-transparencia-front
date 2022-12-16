@@ -1,5 +1,6 @@
 
 import { BannerHome } from '../../components/home/banner-home';
+import { FooterHome } from '../../components/home/footer-home';
 import { FormularioHome } from '../../components/home/formulario-home';
 import { SessaoAssineNewsletterHome } from '../../components/home/sessao-assine-newsletter-home';
 import { SessaoBotoesHome } from '../../components/home/sessao-botoes-home';
@@ -14,6 +15,7 @@ export function Home() {
             <SessaoBotoesHome />
             <SessaoAssineNewsletterHome />
             <SessaoEmpresasParceiras />
+            <FooterHome />
         </main>
     )
 }
