@@ -10,6 +10,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 15px;
 
         .w50 {
             width: 50%;
@@ -19,6 +20,12 @@
             .texto1 {
                 font-size: 1.25rem;
                 color: var(--cinza-450);
+
+                .email {
+                    font-weight: bold;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
             }
 
             .texto2 {
@@ -29,20 +36,10 @@
         }
 
         .box2 {
-            .texto1 {
-                font-size: 1.25rem;
-                color: var(--cinza-450);
 
-                .email {
-                    font-weight: bold;
-                    cursor: pointer;
-                    text-decoration: underline;
-                }
-
-            }
 
             .form {
-                margin-top: 20px;
+                height: 100%;
                 width: 100%;
                 max-width: 634px;
                 padding: 38px 30px;
@@ -113,6 +110,12 @@
 
             .w50 {
                 width: 100%;
+            }
+
+            .box2 {
+                .form {
+                    max-width: 100%;
+                }
             }
         }
     }

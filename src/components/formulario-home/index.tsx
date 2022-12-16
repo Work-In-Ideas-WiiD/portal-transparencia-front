@@ -12,14 +12,15 @@ export function FormularioHome() {
                         dentro da nossa
                         Instituição, por isso
                         criamos esse Portal.</p>
-                </div>
-                <div className={`${styles.box2} ${styles.w50}`}>
                     <p className={styles.texto1}>
                         Fique à vontade para acessar abaixo projetos,
                         contratos e outros dados disponíveis.
                         Caso tenha alguma dúvida ou queira mais informações,
                         favor entrar em contato pelo email <a className={styles.email} href="mailto:portaldatransparencia@renapsi.org.br">portaldatransparencia@renapsi.org.br</a>
                     </p>
+                </div>
+                <div className={`${styles.box2} ${styles.w50}`}>
+
                     <form action="submit" className={styles.form} onSubmit={(e) => { e.preventDefault() }}>
                         <select className={styles.select} >
                             <option value="" disabled selected>Âmbito do projeto</option>

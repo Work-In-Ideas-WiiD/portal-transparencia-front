@@ -21,7 +21,7 @@
             height: 3.125rem;
         }
 
-        ul {
+        .navbar {
             display: flex;
             flex-direction: row;
             gap: 1.25rem;
@@ -29,6 +29,13 @@
 
             li {
                 font-weight: 400;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                display: none;
             }
         }
     }
@@ -41,4 +48,6 @@
         position: absolute;
 
     }
+
+
 }

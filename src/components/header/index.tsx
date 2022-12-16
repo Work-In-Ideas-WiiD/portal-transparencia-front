@@ -7,7 +7,7 @@ export function Header() {
         <header className={styles.header}>
             <div className={styles.container}>
                 <img className={styles.logo} src={Logo} alt="logo" />
-                <ul>
+                <ul className={styles.navbar}>
                     <Link className="react-router-Link" to="/"><li>Sobre</li></Link>
                     <Link className="react-router-Link" to="/"><li>Demà Jovem</li></Link>
                     <Link className="react-router-Link" to="/"><li>Sou Jovem</li></Link>
