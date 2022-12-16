@@ -1,9 +1,9 @@
 
 import styles from './styles.module.scss';
-import IconeCard1 from '../../assets/icone-card1.png';
-import IconeCard2 from '../../assets/icone-card2.png';
-import IconeFlechaBranca from '../../assets/flecha-branca.png';
-import IconeFlechaPreta from '../../assets/flecha-preta.png';
+import IconeCard1 from '../../../assets/icone-card1.png';
+import IconeCard2 from '../../../assets/icone-card2.png';
+import IconeFlechaBranca from '../../../assets/flecha-branca.png';
+import IconeFlechaPreta from '../../../assets/flecha-preta.png';
 
 
 

@@ -1,7 +1,8 @@
 
-import { BannerHome } from '../../components/banner-home';
-import { FormularioHome } from '../../components/formulario-home';
-import { SessaoBotoesHome } from '../../components/sessao-botoes-home';
+import { BannerHome } from '../../components/home/banner-home';
+import { FormularioHome } from '../../components/home/formulario-home';
+import { SessaoAssineNewsletterHome } from '../../components/home/sessao-assine-newsletter-home';
+import { SessaoBotoesHome } from '../../components/home/sessao-botoes-home';
 import './styles.module.scss';
 
 export function Home() {
@@ -10,6 +11,7 @@ export function Home() {
             <BannerHome />
             <FormularioHome />
             <SessaoBotoesHome />
+            <SessaoAssineNewsletterHome />
         </main>
     )
 }
