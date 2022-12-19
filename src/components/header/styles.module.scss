@@ -16,6 +16,10 @@
         justify-content: space-between;
         align-items: center;
 
+        .iconeMenu {
+            display: none;
+        }
+
         .logo {
             width: 9.688rem;
             height: 3.125rem;
@@ -36,6 +40,10 @@
 
             .navbar {
                 display: none;
+            }
+
+            .iconeMenu {
+                display: block;
             }
         }
     }
