@@ -1,11 +1,11 @@
 import styles from './styles.module.scss';
-import LogoEmpresa1 from '../../../assets/dema.png';
-import LogoEmpresa2 from '../../../assets/sistema_sagres.png';
-import LogoEmpresa3 from '../../../assets/fundacao-sagres.png';
-import LogoEmpresa4 from '../../../assets/fundesplai.png';
-import LogoEmpresa5 from '../../../assets/dema_azul.jpg';//FALTOU ESSA
-import LogoEmpresa6 from '../../../assets/edoo.png';
-import LogoEmpresa7 from '../../../assets/FPC.png';
+import LogoEmpresa1 from '../../../assets/marca_dermajovem.png';
+import LogoEmpresa2 from '../../../assets/marca_sistemasagres.png';
+import LogoEmpresa3 from '../../../assets/marca_fundacaosagres.png';
+import LogoEmpresa4 from '../../../assets/marca_fundesplai.png';
+import LogoEmpresa5 from '../../../assets/marca_apj.png';//FALTOU ESSA
+import LogoEmpresa6 from '../../../assets/marca_edoo.png';
+import LogoEmpresa7 from '../../../assets/marca_fpc.png';
 
 
 export function SessaoEmpresasParceiras() {
