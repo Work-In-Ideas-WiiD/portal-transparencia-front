@@ -12,18 +12,24 @@ export function SessaoEmpresasParceiras() {
     return (
         <section className={styles.empresasParceiras}>
             <div className={styles.container}>
-                <h3 className={styles.texto1}>
-                    Empresas
-                    <br />
-                    parceiras:
-                </h3>
-                <img className={styles.imgEmpresa} src={LogoEmpresa1} alt="demà jovem" />
-                <img className={styles.imgEmpresa} src={LogoEmpresa2} alt="demà jovem" />
-                <img className={styles.imgEmpresa} src={LogoEmpresa3} alt="demà jovem" />
-                <img className={styles.imgEmpresa} src={LogoEmpresa4} alt="demà jovem" />
-                <img className={styles.imgEmpresa} src={LogoEmpresa5} alt="demà jovem" />
-                <img className={styles.imgEmpresa} src={LogoEmpresa6} alt="demà jovem" />
-                <img className={styles.imgEmpresa} src={LogoEmpresa7} alt="demà jovem" />
+                <div className={styles.box1}>
+                    <h3 className={styles.texto1}>
+                        Empresas  {' '}
+                        <br className={styles.tagBr} />
+                        parceiras:
+                    </h3>
+                </div>
+                <div className={styles.box2}>
+
+                    <img className={styles.imgEmpresa} src={LogoEmpresa1} alt="demà jovem" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa2} alt="demà jovem" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa3} alt="demà jovem" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa4} alt="demà jovem" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa5} alt="demà jovem" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa6} alt="demà jovem" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa7} alt="demà jovem" />
+                </div>
+
             </div>
         </section>
     )
