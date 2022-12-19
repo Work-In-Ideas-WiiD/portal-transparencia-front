@@ -3,7 +3,7 @@ import LogoEmpresa1 from '../../../assets/dema.png';
 import LogoEmpresa2 from '../../../assets/sistema_sagres.png';
 import LogoEmpresa3 from '../../../assets/fundacao-sagres.png';
 import LogoEmpresa4 from '../../../assets/fundesplai.png';
-import LogoEmpresa5 from '../../../assets/dema.png';//FALTOU ESSA
+import LogoEmpresa5 from '../../../assets/dema_azul.jpg';//FALTOU ESSA
 import LogoEmpresa6 from '../../../assets/edoo.png';
 import LogoEmpresa7 from '../../../assets/FPC.png';
 
