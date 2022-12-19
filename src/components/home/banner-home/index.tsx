@@ -5,6 +5,7 @@ export function BannerHome() {
     return (
         <section className={styles.banner}>
             <div className={styles.containerBanner}>
+                <div className={styles.overlay}></div>
                 <span className={styles.texto}>Portal da <br /> transparência</span>
                 <img className={styles.img} src={ImgBanner} />
             </div>

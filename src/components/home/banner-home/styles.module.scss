@@ -18,7 +18,7 @@
             font-size: 3.625rem;
             display: block;
             position: absolute;
-            z-index: 2;
+            z-index: 3;
             transform: rotate(1.12deg);
         }
 
@@ -26,6 +26,27 @@
             height: 100%;
             position: absolute;
             right: 20px;
+            z-index: 1;
+        }
+
+        .overlay {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: white, $alpha: 0.25);
+            z-index: 2;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .containerBanner {
+            .overlay {
+                display: block;
+            }
         }
     }
 }

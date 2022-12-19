@@ -29,8 +29,20 @@
 
     @media (max-width: 900px) {
         .container {
+
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
+
+            .texto1 {
+                line-height: 34px;
+            }
+
+            .imgEmpresa {
+                height: auto;
+                object-fit: scale-down;
+                width: 10rem;
+
+            }
         }
 
     }

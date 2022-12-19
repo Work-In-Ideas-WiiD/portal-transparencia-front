@@ -47,11 +47,11 @@ export function FooterHome() {
                             </div>
                             <div className={styles.grupo2}>
                                 <span className={styles.texto1}>Siga-nos:</span>
-                                <AiOutlineInstagram className={styles.icone} size={37} color="#727272" />
-                                <SiFacebook className={styles.icone} size={37} color="#727272" />
-                                <TiSocialYoutube className={styles.icone} size={37} color="#727272" />
-                                <FaLinkedin className={styles.icone} size={37} color="#727272" />
-                                <img src={IconTikTok} alt="" className={styles.icone} />
+                                <a href="https://www.instagram.com/renapsibr/?hl=pt-br"><AiOutlineInstagram className={styles.icone} size={37} color="#727272" /></a>
+                                <a href="https://www.facebook.com/renapsibrasil/"><SiFacebook className={styles.icone} size={37} color="#727272" /></a>
+                                <a href="https://www.youtube.com/channel/UCDn1T_R9RUmJwDp6xKMGawQ"><TiSocialYoutube className={styles.icone} size={37} color="#727272" /></a>
+                                <a href="https://www.linkedin.com/company/renapsibr/?originalSubdomain=br"><FaLinkedin className={styles.icone} size={37} color="#727272" /></a>
+                                <a href="https://www.tiktok.com/@demajovembyrenapsi"><img src={IconTikTok} className={styles.icone} /></a>
                             </div>
                         </div>
                     </div>
