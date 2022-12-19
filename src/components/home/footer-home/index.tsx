@@ -2,12 +2,14 @@ import styles from './styles.module.scss';
 import ImgDesenho from '../../../assets/obj.png';
 import ImgUnesco from '../../../assets/unescob.png';
 import ImgBb from '../../../assets/bb-escuro.png';
+import Logo from '../../../assets/logo-renapsi.png';
+import IconTikTok from '../../../assets/tiktok.svg';
 
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { SiFacebook } from 'react-icons/si';
 import { TiSocialYoutube } from 'react-icons/ti';
 import { FaLinkedin } from 'react-icons/fa';
-import { FaTiktok } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export function FooterHome() {
     return (
@@ -18,23 +20,23 @@ export function FooterHome() {
                     <div className={styles.wrapper}>
                         <div className={styles.wrapperLista1}>
                             <ul className={styles.listaFooter}>
-                                <span className={styles.tituloLista}>Sou Aprendiz</span>
-                                <li className={`${styles.itemLista}`}>Quero ser aprendiz</li>
-                                <li className={`${styles.itemLista}`}>Guia do aprendiz</li>
-                                <li className={`${styles.itemLista}`}>Vagas</li>
+                                <span className={styles.tituloLista}><Link className='react-router-Link' to={'/'}>Sou Aprendiz</Link></span>
+                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Quero ser aprendiz</Link></li>
+                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Guia do aprendiz</Link></li>
+                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Vagas</Link></li>
                             </ul>
                             <ul className={styles.listaFooter}>
-                                <span className={styles.tituloLista}>Sou Empresa</span>
-                                <li className={`${styles.itemLista}`}>Já sou cliente empresa</li>
-                                <li className={`${styles.itemLista}`}>Quero contratar aprendiz</li>
-                                <li className={`${styles.itemLista}`}>Calculadora de cota</li>
+                                <span className={styles.tituloLista}><Link className='react-router-Link' to={'/'}>Sou Empresa</Link></span>
+                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Já sou cliente empresa</Link></li>
+                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Quero contratar aprendiz</Link></li>
+                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Calculadora de cota</Link></li>
                             </ul>
                             <ul className={styles.listaFooter}>
-                                <span className={styles.tituloLista}>Notícias</span>
-                                <li className={`${styles.itemListaNegrito}`}>Demà Jovem</li>
-                                <li className={`${styles.itemListaNegrito}`}>Compliance</li>
-                                <li className={`${styles.itemListaNegrito}`}>Contato</li>
-                                <li className={`${styles.itemListaNegrito}`}>LGPD</li>
+                                <span className={styles.tituloLista}><Link className='react-router-Link' to={'/'}>Notícias</Link></span>
+                                <li className={`${styles.itemListaNegrito}`}><Link className='react-router-Link' to={'/'}>Demà Jovem</Link></li>
+                                <li className={`${styles.itemListaNegrito}`}><Link className='react-router-Link' to={'/'}>Compliance</Link></li>
+                                <li className={`${styles.itemListaNegrito}`}><Link className='react-router-Link' to={'/'}>Contato</Link></li>
+                                <li className={`${styles.itemListaNegrito}`}><Link className='react-router-Link' to={'/'}>LGPD</Link></li>
                             </ul>
                         </div>
                         <div className={styles.wrapperLista2}>
@@ -49,18 +51,16 @@ export function FooterHome() {
                                 <SiFacebook className={styles.icone} size={37} color="#727272" />
                                 <TiSocialYoutube className={styles.icone} size={37} color="#727272" />
                                 <FaLinkedin className={styles.icone} size={37} color="#727272" />
-                                <FaTiktok className={styles.icone} size={37} color="#727272" />
+                                <img src={IconTikTok} alt="" className={styles.icone} />
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div className={styles.footer2}>
-
+                    <p className={styles.texto1}>© Renapsi - Rede Nacional de Aprendizagem, Promoção Social e Integração. Leia nossa política de privacidade. Leia nosso manifesto LGPD</p>
+                    <img src={Logo} alt="Renapsi" className={styles.logo} />
                 </div>
-                <div className={styles.footer3}>
 
-                </div>
             </div>
         </footer>
     )
