@@ -1,6 +1,49 @@
+import { useEffect, useState } from 'react';
+import { ObjFormProps } from '../../../models/home.model';
 import styles from './styles.module.scss';
 
-export function FormularioHome() {
+interface FormularioHomeProps {
+    enviar: (obj: ObjFormProps) => void,
+}
+
+const objAmbito = [{
+    valor: 'Federal',
+    chave: 'Âmbito Federal'
+},
+{
+    valor: 'Estadual',
+    chave: 'Âmbito Estadual',
+},
+{
+    valor: 'Municipal',
+    chave: 'Âmbito Municipal'
+}]
+
+
+export function FormularioHome({ enviar }: FormularioHomeProps) {
+    const [objForm, setObjForm] = useState<ObjFormProps>({
+        ambito: '',
+        ano: '',
+        palavraChave: ''
+    })
+
+    const [dataSelect, setDataSelect] = useState<number[]>([]);
+
+    useEffect(() => {
+        gerarDadasParaSelect();
+    }, [])
+
+    function gerarDadasParaSelect() {
+        const arrayDatas: number[] = [];
+        const anoAtual = new Date().getFullYear();
+        let dataLimite = anoAtual - 2013;
+
+        for (let i = 0; i <= dataLimite; i++) {
+            arrayDatas.push(anoAtual - i);
+        }
+        setDataSelect([...arrayDatas]);
+    }
+
     return (
         <section className={styles.sessaoFormulario}>
             <div className={styles.container}>
@@ -21,14 +64,52 @@ export function FormularioHome() {
                 </div>
                 <div className={`${styles.box2} ${styles.w50}`}>
 
-                    <form action="submit" className={styles.form} onSubmit={(e) => { e.preventDefault() }}>
-                        <select className={styles.select} >
-                            <option value="" disabled selected>Âmbito do projeto</option>
+                    <form action="submit" className={styles.form} onSubmit={(e) => { e.preventDefault(), enviar(objForm) }}>
+                        <select
+                            className={styles.select}
+                            defaultValue=""
+                            onChange={(e) => {
+                                setObjForm(prev => ({
+                                    ...prev,
+                                    ambito: e.target.value
+                                }))
+                            }}
+                        >
+                            <option value="" disabled >Âmbito do projeto</option>
+                            {
+                                objAmbito.map((item, index) => (
+                                    <option value={item.chave} key={index}>{item.valor}</option>
+                                ))
+                            }
                         </select>
-                        <select className={styles.select} >
-                            <option value="" disabled selected>Ano</option>
+                        <select
+                            className={styles.select}
+                            defaultValue=""
+                            onChange={(e) => {
+                                setObjForm(prev => ({
+                                    ...prev,
+                                    ano: e.target.value
+                                }))
+                            }}
+                        >
+                            <option value="" disabled>Ano</option>
+                            {
+                                dataSelect.map((item, index) => (
+                                    <option value={item} key={index}>{item}</option>
+                                ))
+                            }
                         </select>
-                        <input type="text" className={styles.input} placeholder="Palavra chave relacionada ao projeto" />
+                        <input
+                            type="text"
+                            className={styles.input}
+                            placeholder="Palavra chave relacionada ao projeto"
+                            onChange={(e) => {
+                                setObjForm(prev => ({
+                                    ...prev,
+                                    palavraChave: e.target.value
+                                }))
+                            }}
+                        />
                         <button className={styles.botaoSubmit} type="submit">Buscar</button>
                     </form>
                 </div>

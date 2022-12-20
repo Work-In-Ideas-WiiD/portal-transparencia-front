@@ -20,16 +20,14 @@ export function SessaoEmpresasParceiras() {
                     </h3>
                 </div>
                 <div className={styles.box2}>
-
                     <img className={styles.imgEmpresa} src={LogoEmpresa1} alt="demà jovem" />
-                    <img className={styles.imgEmpresa} src={LogoEmpresa2} alt="demà jovem" />
-                    <img className={styles.imgEmpresa} src={LogoEmpresa3} alt="demà jovem" />
-                    <img className={styles.imgEmpresa} src={LogoEmpresa4} alt="demà jovem" />
-                    <img className={styles.imgEmpresa} src={LogoEmpresa5} alt="demà jovem" />
-                    <img className={styles.imgEmpresa} src={LogoEmpresa6} alt="demà jovem" />
-                    <img className={styles.imgEmpresa} src={LogoEmpresa7} alt="demà jovem" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa2} alt="sistema sagres" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa3} alt="fundação sagres" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa4} alt="fundesplai" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa5} alt="apj" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa6} alt="edoo" />
+                    <img className={styles.imgEmpresa} src={LogoEmpresa7} alt="fpc" />
                 </div>
-
             </div>
         </section>
     )
