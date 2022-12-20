@@ -29,6 +29,7 @@ export function FormularioHome({ enviar }: FormularioHomeProps) {
 
     const [dataSelect, setDataSelect] = useState<number[]>([]);
 
+
     useEffect(() => {
         gerarDadasParaSelect();
     }, [])
@@ -43,6 +44,8 @@ export function FormularioHome({ enviar }: FormularioHomeProps) {
         }
         setDataSelect([...arrayDatas]);
     }
+
+
 
     return (
         <section className={styles.sessaoFormulario}>

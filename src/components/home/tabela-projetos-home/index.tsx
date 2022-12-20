@@ -3,10 +3,11 @@ import { ProjetosRes } from "../../../models/home.model";
 import styles from './styles.module.scss';
 
 interface TabelaProjetosProps {
-    projetos: ProjetosRes[]
+    projetos: ProjetosRes[],
+    selecionarProjeto: (projeto: ProjetosRes) => void
 }
 
-export function TabelaProjetos({ projetos }: TabelaProjetosProps) {
+export function TabelaProjetos({ projetos, selecionarProjeto }: TabelaProjetosProps) {
 
     useEffect(() => {
 
@@ -23,19 +24,19 @@ export function TabelaProjetos({ projetos }: TabelaProjetosProps) {
                             <th >Nome do Projeto</th>
                             <th className={styles.responsivo}>Número do Instrumento</th>
                             <th className={styles.responsivo}>Quantidade de empregados</th>
-                            <th>Ação</th>
+                            <th >Ação</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            projetos.map((projeto) => (
-                                <tr>
+                            projetos.map((projeto, index) => (
+                                <tr key={index}>
                                     <td className={styles.responsivo}>{projeto.orgao}</td>
                                     <td className={styles.center}>{projeto.nome}</td>
                                     <td className={`${styles.center} ${styles.responsivo}`}>{projeto.numero_instrumento}</td>
                                     <td className={`${styles.center} ${styles.responsivo}`}>{projeto.quantidade}</td>
                                     <td className={styles.center}>
-                                        <button className={styles.botao}>Visualizar</button>
+                                        <button className={styles.botao} onClick={() => { selecionarProjeto(projeto) }}>Visualizar</button>
                                     </td>
                                 </tr>
                             ))
