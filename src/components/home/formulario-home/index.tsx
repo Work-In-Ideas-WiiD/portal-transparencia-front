@@ -7,16 +7,16 @@ interface FormularioHomeProps {
 }
 
 const objAmbito = [{
-    valor: 'Federal',
-    chave: 'Âmbito Federal'
+    valor: 'Âmbito Federal',
+    chave: 'Federal'
 },
 {
-    valor: 'Estadual',
-    chave: 'Âmbito Estadual',
+    valor: 'Âmbito Estadual',
+    chave: 'Estadual',
 },
 {
-    valor: 'Municipal',
-    chave: 'Âmbito Municipal'
+    valor: 'Âmbito Municipal',
+    chave: 'Municipal'
 }]
 
 
