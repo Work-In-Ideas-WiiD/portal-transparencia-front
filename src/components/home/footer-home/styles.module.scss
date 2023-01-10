@@ -2,6 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 20px;
+    background-color: var(--cinza-200);
 
     .container {
         width: 100%;
@@ -115,7 +117,7 @@
         .footer2 {
             border-top: 1px solid var(--azul-700);
             padding-top: 17px;
-            margin-bottom: 270px;
+            margin-bottom: 20px;
             display: flex;
             flex-direction: row;
             align-items: center;
