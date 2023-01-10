@@ -81,8 +81,8 @@ export function Home() {
             <FormularioHome enviar={pesquisarProjeto} />
             <TabelaProjetos projetos={projetos} selecionarProjeto={selecionarProjeto} />
             <SessaoBotoesHome />
-            <SessaoAssineNewsletterHome />
-            <SessaoEmpresasParceiras />
+            {/* <SessaoAssineNewsletterHome />
+            <SessaoEmpresasParceiras /> */}
             <FooterHome />
             <ModalProjeto projeto={projeto} fecharModal={manusearModal} estadoModal={modalAberta} />
         </main>
