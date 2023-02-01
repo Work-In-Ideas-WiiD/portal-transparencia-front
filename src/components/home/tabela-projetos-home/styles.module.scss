@@ -1,0 +1,82 @@
+.sessaoTabela {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        max-width: 1280px;
+        width: 100%;
+        padding-inline: 1.25rem;
+
+        .tabela {
+            width: 100%;
+            border-collapse: collapse;
+
+            @media (max-width: 768px) {
+                thead {
+                    tr {
+                        .responsivo {
+                            display: none;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        .responsivo {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            thead {
+
+                background-color: var(--cinza-600);
+
+                tr {
+                    th {
+                        padding: 40px;
+                        font-size: 1.25rem;
+                        color: white;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    border-bottom: 1px solid var(--cinza-600);
+
+                    td {
+                        padding: 20px;
+                        font-size: 1rem;
+
+                        .botao {
+                            padding: 10px;
+                            text-transform: uppercase;
+                            color: white;
+                            background-color: var(--azul-400);
+                            border: none;
+                            outline: none;
+                            border-radius: 5px;
+                            font-weight: bold;
+
+                            &:hover {
+                                transition: .2s;
+                                background-color: var(--azul-400-shade);
+                            }
+
+                            &:active {
+                                background-color: var(--azul-400-tint);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.center {
+    text-align: center;
+}

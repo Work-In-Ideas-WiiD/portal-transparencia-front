@@ -1,0 +1,128 @@
+.sessaoFormulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 100%;
+        padding: 20px;
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+
+        .w50 {
+            width: 50%;
+        }
+
+        .box1 {
+            .texto1 {
+                font-size: 1.25rem;
+                color: var(--cinza-450);
+
+                .email {
+                    font-weight: bold;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+
+            .texto2 {
+                margin-top: 20px;
+                font-size: 2.813rem;
+
+            }
+        }
+
+        .box2 {
+
+
+            .form {
+                height: 100%;
+                width: 100%;
+                max-width: 634px;
+                padding: 38px 30px;
+                border-radius: 5px;
+                border: 1px solid var(--cinza-500);
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .select {
+                    -webkit-appearance: none !important;
+                    -moz-appearance: none !important;
+                    background-color: #ffffff;
+                    height: 55px;
+                    width: 100%;
+                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAdVBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhMdQaAAAAJ3RSTlMAAAECAwQGBwsOFBwkJTg5RUZ4eYCHkJefpaytrsXGy8zW3+Do8vNn0bsyAAAAYElEQVR42tXROwJDQAAA0Ymw1p9kiT+L5P5HVEi3qJn2lcPjtIuzUIJ/rhIGy762N3XaThqMN1ZPALsZPEzG1x8LrFL77DHBnEMxBewz0fJ6LyFHTPL7xhwzWYrJ9z22AqmQBV757MHfAAAAAElFTkSuQmCC);
+                    background-position: 100%;
+                    background-repeat: no-repeat;
+                    border: 1px solid var(--cinza-500);
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                }
+
+                .input {
+                    background-position: 100%;
+                    background-repeat: no-repeat;
+                    border: 1px solid var(--cinza-500);
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                    background-color: #ffffff;
+                    height: 55px;
+                    width: 100%;
+                }
+
+                .input::placeholder {
+                    color: inherit;
+                }
+
+                .botaoSubmit {
+                    text-transform: uppercase;
+                    color: white;
+                    background-color: var(--azul-400);
+                    height: 55px;
+                    border: none;
+                    outline: none;
+                    margin-top: 22px;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    font-size: 1.25rem;
+
+                    &:hover {
+                        transition: .2s;
+                        background-color: var(--azul-400-shade);
+                    }
+
+                    &:active {
+                        background-color: var(--azul-400-tint);
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            text-align: justify;
+
+            .w50 {
+                width: 100%;
+            }
+
+            .box2 {
+                .form {
+                    max-width: 100%;
+                }
+            }
+
+            .box1 {
+                .texto1 {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.banner {
+    width: 100%;
+    background-color: var(--cinza-300);
+    display: flex;
+    justify-content: center;
+
+    .containerBanner {
+        max-width: 1280px;
+        width: 100%;
+        height: 17.125rem;
+        padding-inline: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .texto {
+            font-weight: 400;
+            font-size: 3.625rem;
+            display: block;
+            position: absolute;
+            z-index: 3;
+            transform: rotate(1.12deg);
+        }
+
+        .img {
+            height: 100%;
+            position: absolute;
+            right: 20px;
+            z-index: 1;
+        }
+
+        .overlay {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: white, $alpha: 0.55);
+            z-index: 2;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .containerBanner {
+            .overlay {
+                display: block;
+            }
+        }
+    }
+}

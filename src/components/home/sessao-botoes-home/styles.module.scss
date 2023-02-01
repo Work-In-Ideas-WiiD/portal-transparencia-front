@@ -1,0 +1,99 @@
+.sessaoBotoes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+    margin-bottom: 79px;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        max-width: 1280px;
+        width: 100%;
+        padding-inline: 1.25rem;
+
+        .cartao {
+            width: 100%;
+            max-width: 370px;
+            height: 200px;
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+
+            .linha {
+                position: absolute;
+                width: 37px;
+                background-color: rgba($color: #000000, $alpha: 0.25);
+                height: 1px;
+                top: 39px;
+                left: 42px;
+            }
+
+            .icone {
+                position: absolute;
+                top: 21px;
+                right: 34px;
+
+            }
+
+            .texto1 {
+                position: absolute;
+                font-weight: bold;
+                font-size: 2.125rem;
+                top: 69px;
+                left: 40px;
+            }
+
+            .containerTexto {
+                position: absolute;
+                top: 121px;
+                left: 40px;
+
+                .texto2 {
+
+                    font-size: 1.25rem;
+                    opacity: 0.8;
+                }
+
+                .flecha {
+                    transition: .2s;
+                    margin-left: 24px;
+                }
+            }
+
+            &:hover {
+                .containerTexto {
+                    .flecha {
+                        transition: .2s;
+                        margin-left: 44px;
+                    }
+                }
+            }
+
+        }
+
+        .azul {
+            background-color: var(--azul-350);
+        }
+
+        .amarelo {
+            background-color: var(--amarelo-500);
+        }
+
+        .branco {
+            color: #fff;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 70px;
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
