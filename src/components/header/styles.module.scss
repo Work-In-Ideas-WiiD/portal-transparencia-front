@@ -23,6 +23,7 @@
         .logo {
             width: 9.688rem;
             height: 3.125rem;
+            cursor: pointer;
         }
 
         .navbar {
@@ -30,6 +31,11 @@
             flex-direction: row;
             gap: 1.25rem;
             font-size: 1.25rem;
+
+
+            a {
+                list-style-type: none;
+            }
 
             li {
                 font-weight: 400;

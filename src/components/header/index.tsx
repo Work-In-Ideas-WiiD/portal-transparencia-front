@@ -25,15 +25,17 @@ export function Header() {
             <MenuMobile aberto={menuAberto} acaoMenu={handleMenu} />
             <header className={styles.header}>
                 <div className={styles.container}>
-                    <img className={styles.logo} src={Logo} alt="logo" />
+                    <a href="/" className={styles.logo} >
+                        <img className={styles.logo} src={Logo} alt="logo" />
+                    </a>
                     <ul className={styles.navbar}>
-                        <Link className="react-router-Link" to="/"><li>Sobre</li></Link>
-                        <Link className="react-router-Link" to="/"><li>Demà Jovem</li></Link>
-                        <Link className="react-router-Link" to="/"><li>Sou Jovem</li></Link>
-                        <Link className="react-router-Link" to="/"><li>Sou Empresa</li></Link>
-                        <Link className="react-router-Link" to="/"><li>Blog</li></Link>
-                        <Link className="react-router-Link" to="/"><li>Compliance</li></Link>
-                        <Link className="react-router-Link" to="/"><li>Contato</li></Link>
+                        <a className="react-router-a" href='https://renapsi.org.br/sobre/'><li>Sobre</li></a>
+                        <a className="react-router-a" href='https://renapsi.org.br/dema-jovem/'><li>Demà Jovem</li></a>
+                        <a className="react-router-a" href='https://renapsi.org.br/sou-aprendiz/'><li>Sou Jovem</li></a>
+                        <a className="react-router-a" href='https://renapsi.org.br/contratar-aprendiz/'><li>Sou Empresa</li></a>
+                        <a className="react-router-a" href='https://renapsi.org.br/blog/'><li>Blog</li></a>
+                        <a className="react-router-a" href='https://renapsi.org.br/compliance/'><li>Compliance</li></a>
+                        <a className="react-router-a" href='https://renapsi.org.br/contato/'><li>Contato</li></a>
                     </ul>
                     <FiMenu size={30} className={styles.iconeMenu} onClick={() => { handleMenu() }} />
                 </div>

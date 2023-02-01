@@ -20,23 +20,23 @@ export function FooterHome() {
                     <div className={styles.wrapper}>
                         <div className={styles.wrapperLista1}>
                             <ul className={styles.listaFooter}>
-                                <span className={styles.tituloLista}><Link className='react-router-Link' to={'/'}>Sou Aprendiz</Link></span>
-                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Quero ser aprendiz</Link></li>
-                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Guia do aprendiz</Link></li>
-                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Vagas</Link></li>
+                                <span className={styles.tituloLista}><a href='#'>Sou Aprendiz</a></span>
+                                <li className={`${styles.itemLista}`}><a href='https://renapsi.org.br/sou-aprendiz/'>Quero ser aprendiz</a></li>
+                                <li className={`${styles.itemLista}`}><a href='https://renapsi.org.br/wp-content/uploads/2022/12/Guia-do-Aprendiz-Versao-Final.pdf'>Guia do aprendiz</a></li>
+                                <li className={`${styles.itemLista}`}><a href='https://candidato.edoo.com.br/login'>Vagas</a></li>
                             </ul>
                             <ul className={styles.listaFooter}>
-                                <span className={styles.tituloLista}><Link className='react-router-Link' to={'/'}>Sou Empresa</Link></span>
-                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Já sou cliente empresa</Link></li>
-                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Quero contratar aprendiz</Link></li>
-                                <li className={`${styles.itemLista}`}><Link className='react-router-Link' to={'/'}>Calculadora de cota</Link></li>
+                                <span className={styles.tituloLista}><a href='#'>Sou Empresa</a></span>
+                                <li className={`${styles.itemLista}`}><a href='https://renapsi.org.br/contratar-aprendiz/'>Já sou cliente empresa</a></li>
+                                <li className={`${styles.itemLista}`}><a href='https://renapsi.org.br/contratar-aprendiz/'>Quero contratar aprendiz</a></li>
+                                <li className={`${styles.itemLista}`}><a href='https://renapsi.org.br/calculadora-de-cotas/'>Calculadora de cota</a></li>
                             </ul>
                             <ul className={styles.listaFooter}>
-                                <span className={styles.tituloLista}><Link className='react-router-Link' to={'/'}>Notícias</Link></span>
-                                <li className={`${styles.itemListaNegrito}`}><Link className='react-router-Link' to={'/'}>Demà Jovem</Link></li>
-                                <li className={`${styles.itemListaNegrito}`}><Link className='react-router-Link' to={'/'}>Compliance</Link></li>
-                                <li className={`${styles.itemListaNegrito}`}><Link className='react-router-Link' to={'/'}>Contato</Link></li>
-                                <li className={`${styles.itemListaNegrito}`}><Link className='react-router-Link' to={'/'}>LGPD</Link></li>
+                                <li className={`${styles.itemListaNegrito}`}><a href='https://renapsi.org.br/blog/'>Notícias</a></li>
+                                <li className={`${styles.itemListaNegrito}`}><a href='https://renapsi.org.br/dema-jovem/'>Demà Jovem</a></li>
+                                <li className={`${styles.itemListaNegrito}`}><a href='https://renapsi.org.br/compliance/'>Compliance</a></li>
+                                <li className={`${styles.itemListaNegrito}`}><a href='https://renapsi.org.br/contato/'>Contato</a></li>
+                                <li className={`${styles.itemListaNegrito}`}><a href='https://renapsi.org.br/wp-content/uploads/2022/12/Compliance-Renapsi-LGPD.pdf'>LGPD</a></li>
                             </ul>
                         </div>
                         <div className={styles.wrapperLista2}>
@@ -58,7 +58,9 @@ export function FooterHome() {
                 </div>
                 <div className={styles.footer2}>
                     <p className={styles.texto1}>© Renapsi - Rede Nacional de Aprendizagem, Promoção Social e Integração. Leia nossa política de privacidade. Leia nosso manifesto LGPD</p>
-                    <img src={Logo} alt="Renapsi" className={styles.logo} />
+                    <a href="/" className={styles.logo}>
+                        <img src={Logo} alt="Renapsi" className={styles.logo} />
+                    </a>
                 </div>
 
             </div>

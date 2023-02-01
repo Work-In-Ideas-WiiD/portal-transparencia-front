@@ -11,7 +11,7 @@ export function SessaoBotoesHome() {
     return (
         <section className={styles.sessaoBotoes}>
             <div className={styles.container}>
-                <div className={`${styles.cartao} ${styles.amarelo}`}>
+                <a href='https://renapsi.org.br/sou-aprendiz/' className={`${styles.cartao} ${styles.amarelo}`}>
                     <div className={styles.linha}></div>
                     <img className={styles.icone} src={IconeCard1} />
                     <span className={styles.texto1}>Sou jovem</span>
@@ -20,8 +20,8 @@ export function SessaoBotoesHome() {
                         <span className={styles.texto2}>Quero ser aprendiz</span>
                         <img className={styles.flecha} src={IconeFlechaPreta} />
                     </div>
-                </div>
-                <div className={`${styles.cartao} ${styles.azul}`}>
+                </a>
+                <a href='https://renapsi.org.br/contratar-aprendiz/' className={`${styles.cartao} ${styles.azul}`}>
                     <div className={styles.linha}></div>
                     <img className={styles.icone} src={IconeCard2} />
                     <span className={`${styles.texto1} ${styles.branco}`}>Sou empresa</span>
@@ -31,7 +31,7 @@ export function SessaoBotoesHome() {
                         <img className={styles.flecha} src={IconeFlechaBranca} />
                     </div>
 
-                </div>
+                </a>
             </div>
         </section>
     )
